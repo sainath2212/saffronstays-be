@@ -3,7 +3,7 @@ const app = express();
 
 const roomRoutes = require('./src/routes/roomRoutes');
 
-app.use('/', roomRoutes);
+app.use('/api', roomRoutes);
 
 app.use('/',(req,res)=>{
     res.status(200).json({"message" : "Welcome to SaffronStays"})
